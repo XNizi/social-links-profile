@@ -1,0 +1,13 @@
+@media (min-width: 768px) {
+	.card {
+		width: 384px;
+		padding: 40px;
+		&__buttonLink {
+			transition: 0.3s;
+			&:hover {
+				background-color: $neonGreen;
+				color: $grey;
+			}
+		}
+	}
+}

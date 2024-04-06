@@ -1,0 +1,15 @@
+@mixin BodyBold {
+	line-height: 150%;
+	font-size: 1.4rem;
+	font-weight: 700;
+}
+@mixin BodyRegular {
+	line-height: 150%;
+	font-size: 1.4rem;
+	font-weight: 400;
+}
+@mixin Heading {
+	line-height: 150%;
+	font-size: 2.4rem;
+	font-weight: 600;
+}

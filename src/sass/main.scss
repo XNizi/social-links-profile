@@ -1,0 +1,71 @@
+@use './colors' as *;
+@use './variable' as *;
+
+html {
+	font-size: 62.5%;
+}
+* {
+	box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+}
+body {
+	display: flex;
+	flex-direction: column;
+	font-family: 'Inter', sans-serif;
+	min-height: 100vh;
+	background-color: $black;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+}
+.card {
+	background-color: $darkGrey;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding: 24px;
+	border-radius: 12px;
+	width: 327px;
+	&__img {
+		height: 88px;
+		width: 88px;
+		border-radius: 50%;
+	}
+	&__infoBox {
+		margin: 24px 0;
+	}
+	&__name {
+		color: $white;
+		@include Heading;
+	}
+	&__location {
+		color: $neonGreen;
+		@include BodyBold;
+	}
+	&__bioText {
+		color: $white;
+		@include BodyRegular;
+		margin-bottom: 24px;
+	}
+	&__buttonBox {
+		display: flex;
+		flex-direction: column;
+		width: 100%;
+	}
+	&__buttonLink {
+		margin-bottom: 16px;
+		background-color: $grey;
+		border-radius: 8px;
+		text-decoration: none;
+		color: $white;
+		width: 100%;
+		padding: 12px;
+		@include BodyBold;
+		&:last-of-type {
+			margin-bottom: 0;
+		}
+	}
+}
+
+@import './desktop';
